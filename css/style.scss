@@ -1,0 +1,26 @@
+body{
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.HeaderDiapo{
+    &-titreDiapo{
+        text-align: center;
+    }
+}
+
+.DisplayImage{
+    text-align: center;
+    &-img{
+        display: none;
+    }
+    &-img.active{
+        display: inline;
+    }
+
+}
+
+.NavigateImage{
+    text-align: center;
+}
+
