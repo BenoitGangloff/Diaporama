@@ -22,4 +22,8 @@ body {
 .NavigateImage {
   text-align: center;
 }
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
