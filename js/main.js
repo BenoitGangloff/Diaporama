@@ -30,6 +30,9 @@ function diapoPrec() {
     if (currentIndex!=0) {
         previousIndex = currentIndex;
         currentIndex --;
+    } else {
+        previousIndex = 0;
+        currentIndex = 9;
     }
     displayDiapo();
 }
@@ -39,6 +42,9 @@ function diapoNext() {
     if (currentIndex!=9) {
         previousIndex = currentIndex;
         currentIndex ++;
+    } else {
+        previousIndex = 9;
+        currentIndex = 0;
     }
     displayDiapo();
 }
@@ -48,6 +54,13 @@ function playDiapo() {
     play.classList.toggle('hidden');
     pause.classList.toggle('hidden');
     playing = setInterval(function () {
+        // if (currentIndex == 9) {
+        //     previousIndex = 9;
+        //     currentIndex = 0;
+        //     displayDiapo();
+        // } else {
+        //     diapoNext();
+        // }
         diapoNext();
     }, 1000);
 }

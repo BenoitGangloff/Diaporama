@@ -11,8 +11,17 @@ body{
 
 .DisplayImage{
     text-align: center;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    height: 600px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
     &-img{
         display: none;
+        justify-content: center;
+        align-self: center;    
     }
     &-img.active{
         display: inline;
